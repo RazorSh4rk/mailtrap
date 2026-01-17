@@ -34,6 +34,7 @@ func main() {
 		},
 		AllowedHosts: []string{
 			"*",
+			"test",
 		},
 		BackendConfig: backends.BackendConfig{
 			"save_process":     "HeadersParser|Debugger|FullLogger",
