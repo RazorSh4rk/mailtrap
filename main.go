@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"os"
 
 	"github.com/flashmob/go-guerrilla"
 )
@@ -12,6 +13,8 @@ func main() {
 
 	if err == nil {
 		fmt.Println("Server Started!")
+		hName, _ := os.Hostname()
+		fmt.Println("Host is", hName)
 	}
 
 	for {
